@@ -1,0 +1,91 @@
+:root {
+    --height-pos: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont1{
+    font-size:x-small;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+.btn1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 4vh;
+    width: 12.5vw;
+    border: 1px bisque solid;
+    color: aliceblue;
+    transition: background-color 2s;
+    transition: color 2s;
+}
+.btn1:hover{
+    background-color: bisque;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.name {
+    color: bisque;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+#nav {
+    background-color: black;
+    color: bisque;
+    display: flex;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:99.05vw;
+    height: 10vh;
+    border-bottom: 1px bisque solid;
+}
+#home , #about , #portfolio , #contact , #blog {
+    cursor: pointer;
+}
+#portfolio_section , #blog_section , #contact_section , #about_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    height: 90vh;
+    color: aliceblue;
+    background-color: black;
+    border-bottom: 1px bisque solid;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
