@@ -12,7 +12,8 @@ body {
     background-color: black;
 }
 img {
-    width: 250px;
+    margin-top: 10px;
+    width: 300px;
     border-radius: 50%;
 }
 nav {
@@ -33,6 +34,7 @@ nav {
     font-size: 24x;
     color: azure;
     cursor: pointer;
+    user-select: none;
 }
 .landing {
     height: 90vh;
@@ -42,10 +44,12 @@ nav {
     justify-content: space-around;
     border-bottom: 1px solid bisque;
 }
-.landing h1 {
-    margin: 100px;
+.landing p {
+    color: azure;
+}
+.title {
     font-size: 50px;
-    color: #ae5fce;
+
 }
 .intro {
     font-size: 50px;
@@ -65,19 +69,23 @@ nav {
     border: 1px bisque solid;
     transition: background-color 2s;
     transition: color 2s;
+    user-select: none;
 }
 .btn:hover {
     background-color: bisque;
     color: black;
     cursor: pointer;
     font-weight: 500;
+    user-select: none;
 }
 
 fieldset {
     height: 150px;
+    width: 50vw;
     font-size: 20px;
     padding:10px;
     text-align: center;
+    margin-bottom: 50px;
 }
 a {
     stroke: none;
@@ -85,7 +93,28 @@ a {
     text-decoration: none;
     color: lightskyblue;
 }
-
+[class$='Section'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 100%;
+}
+ul a img{
+    width: 40px;
+}
+footer nav {
+    width: 300px;
+    margin-left:auto;
+    margin-right: auto;
+    border-left: 1px solid bisque;
+    border-right: 1px solid bisque;
+    border-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media screen and (max-width:768px) {
     .intro {
         font-size: 25px;

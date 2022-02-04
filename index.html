@@ -38,6 +38,7 @@
     
     <section class="landing">
         <div class="intro" id="HomeSection">
+
             <p> Hi , i'm <div class="name">Jamel Mrad</div></p>
             <p>a software engineering student .</p>
         </div>
@@ -48,10 +49,11 @@
 
     <section class="landing">
         <div class="AboutSection" id="AboutSection">
+            <p class="title">ABOUT</p>
             <img src="me.jpg" alt="me" >
                 <fieldset>
                 <legend style="color: bisque;">Who am i ?</legend>
-                <p>I'm a software engineering student at <a href="https://esprit.tn">ESPRIT</a><br>
+                <p>I'm a software engineering student at <a href="http://www.esprit.tn">ESPRIT</a><br>
                 i have serious Passion for making websites , web apps from scratch <br> besides creating intuitive , dynamic user experiences .</p>
                 </fieldset>
                 </div>
@@ -60,17 +62,33 @@
 
     <section class="landing">
         <div class="PortfolioSection" id="PortfolioSection">
-
+            <p class="title">PORTFOLIO</p>
         </div>
     </section>
 
     <section class="landing">
         <div class="ContactSection" id="ContactSection">
-
+            <p class="title">CONTACT</p>
         </div>
     </section>
 
-    <footer>JAMEL MRAD ©2022</footer>
+    <footer>
+        <nav>
+            <p>JAMEL MRAD ©2022</p>
+            <ul class="nav-links">
+                <a href="https://www.linkedin.com/jamel-edine-mrad1538201a9/" target="popup" onclick="popThing(this.href)">
+                    <img src="./icons/cloud/icons8-linkedin-100.png" alt="linkedin">
+                </a> 
+                <a href="https://www.instagram.com/jamel.e.m/" target="popup" onclick="popThing(this.href)">
+                    <img src="./icons/cloud/icons8-instagram-100.png" alt="instagram">
+                </a>
+                <a href="https://github.com/jamelmrad" target="popup" onclick="popThing(this.href)">
+                    <img src="./icons/cloud/icons8-github-100 (1).png" alt="github">
+                </a>
+            </ul>
+        </nav>
+    </footer>
     <script src="./app.js"></script>
+    <script src="./popup.js"></script>
 </body>
 </html>

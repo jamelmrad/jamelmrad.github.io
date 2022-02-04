@@ -5,6 +5,7 @@ const links = document.querySelectorAll(".nav-links li");
 var navlist= document.querySelector("nav");
 var sticky = navlist.offsetTop;
 
+//low width navbar
 var elem_id;
 const y = 'Section';
 hamburger.addEventListener("click", () => {
@@ -19,6 +20,10 @@ function go(elem_id)
 {
     const x = elem_id.concat('',y);
     const z = document.getElementById(x);
+    if ( elem_id == "btn")
+    {
+        document.getElementById("AboutSection").scrollIntoView();
+    }
     z.scrollIntoView();
 }
 
